@@ -1,0 +1,18 @@
+---
+
+version: 0.0.1
+metadata:
+  name: Hacker News api test
+  description: E2E test of the hacker news public api
+environments:
+  - name: production
+    default: true
+    plugins:
+      - name: restqapi
+        config:
+          url: https://hacker-news.firebaseio.com
+    outputs:
+      - type: file
+        enabled: false
+        config:
+          path: 'hacker-news.json'
