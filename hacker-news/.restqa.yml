@@ -15,4 +15,4 @@ environments:
       - type: file
         enabled: false
         config:
-          path: 'hacker-news.json'
+          path: 'hacker-news.report.json'
