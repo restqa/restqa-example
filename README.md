@@ -1,6 +1,6 @@
 # RestQA : Documentation by example
 
-> Restqa documentation by example
+> Let's simplify the documentation by sharing functional example 🥳
 
 ## Welcome
 
