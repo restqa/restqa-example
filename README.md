@@ -17,7 +17,7 @@ For a complete description of the RestQa spec, please refer to our [RestQa Docum
 ## Table Of Content
 
 1. [RestQa CLI](#restqa-cli)
-1. [Test API](#test-api)
+1. [API Testing](#api-testing)
 
 
 ## RestQa CLI
@@ -31,7 +31,7 @@ restqa steps then   # List all the available gherkin steps (then)
 restqa run .        # Run the test suite
 ```
 
-## Test API
+## API Testing
 
 RestQa relies on the plugin [RestQapi](https://restqa.io/restqapi.html) to manage the steps related to APIs.
 You can find example for :
