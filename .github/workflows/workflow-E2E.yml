@@ -11,10 +11,10 @@ jobs:
           - hacker-news
     steps:
     - uses: actions/checkout@v2
-    - name: Validate the gerkin files for ${{ matrix.example_folder }}
-      uses: docker://gherkin/lint
-      with:
-        args: gherkin_lint -f ${{ matrix.example_folder }}
+    #- name: Validate the gerkin files for ${{ matrix.example_folder }}
+    #  uses: docker://gherkin/lint
+    #  with:
+    #    args: gherkin_lint -f ${{ matrix.example_folder }}
     - name: Run E2E Test Automation on the Environment for ${{ matrix.example_folder }}
       uses: docker://restqa/restqa:0.0.1
       with:
