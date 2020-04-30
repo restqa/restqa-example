@@ -5,7 +5,7 @@
 ## Welcome
 
 RestQa is an open source project that provides test automation workflows for any project.
-Each step in an Argo workflow is defined as a container.
+Each step in an RestQa is add by plugins.
 
 RestQa is implemented as a command line tool base on Cucumber / Gherkin.
 
