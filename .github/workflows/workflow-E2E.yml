@@ -1,0 +1,24 @@
+on: [push]
+
+name: RestQa Example Testing
+
+jobs:
+  Test-Examples:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        example_folder:
+          - hacker-news
+    steps:
+    - uses: actions/checkout@v2
+    - name: Validate the gerkin files for ${{ matrix.example_folder }}
+      uses: docker://gherkin/lint
+      with:
+        args: gherkin_lint -f ${{ matrix.example_folder }}
+    - name: Run E2E Test Automation on the Environment for ${{ matrix.example_folder }}
+      uses: docker://restqa/restqa:0.0.1
+      with:
+        args: restqa run ./${{ matrix.example_folder }}
+      #env:
+      #  RESTQA_ENV: product
+      #  API_KEY: default-api-key
