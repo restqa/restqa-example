@@ -19,3 +19,4 @@ jobs:
       uses: restqa/restqa-action@0.0.1
       with:
         path: ./${{ matrix.example_folder }}
+        config_file: ./gherkin-lintrc
