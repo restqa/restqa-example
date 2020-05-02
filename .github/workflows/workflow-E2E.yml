@@ -15,7 +15,7 @@ jobs:
       uses: restqa/gherkin-linter-action@0.0.1
       with:
         path: ./${{ matrix.example_folder }}
-        config_file:  ./gherkin-lintrc
+        config_file:  ./.gherkin-lintrc
     - name: Run E2E Test Automation on the Environment for ${{ matrix.example_folder }}
       uses: restqa/restqa-action@0.0.1
       with:
