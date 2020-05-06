@@ -13,6 +13,6 @@ environments:
           url: https://hacker-news.firebaseio.com
     outputs:
       - type: file
-        enabled: false
+        enabled: true
         config:
           path: 'hacker-news.report.json'
