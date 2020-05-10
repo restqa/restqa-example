@@ -1,0 +1,11 @@
+pages:
+  - name: login
+    path: /login
+    sections:
+      - name: login
+        selector: '#login'
+        elements:
+          username: '#login_field'
+          password: '#password'
+          signIn: "input.btn.btn-primary.btn-block"
+          errorLabel: "#js-flash-container"

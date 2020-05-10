@@ -1,0 +1,18 @@
+---
+version: 0.0.1
+metadata:
+  name: Github Ui test
+  description: E2E test of the Github website
+environments:
+  - name: production
+    default: true
+    pageObject: './page-object.yml'
+    plugins:
+      - name: restqui
+        config:
+          url: https://github.com
+    outputs:
+      - type: file
+        enabled: true
+        config:
+          path: 'github.report.json'
