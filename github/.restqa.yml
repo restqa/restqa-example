@@ -6,7 +6,6 @@ metadata:
 environments:
   - name: production
     default: true
-    
     plugins:
       - name: restqui
         config:
