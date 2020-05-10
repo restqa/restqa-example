@@ -6,11 +6,12 @@ metadata:
 environments:
   - name: production
     default: true
-    pageObject: './page-object.yml'
+    
     plugins:
       - name: restqui
         config:
           url: https://github.com
+          pageObject: './page-object.yml'
     outputs:
       - type: file
         enabled: true
