@@ -16,3 +16,8 @@ environments:
         enabled: true
         config:
           path: 'hacker-news.report.json'
+      - type: slack
+        enabled: true
+        config:
+          url: !env-var SLACK_WEBHOOK_URL
+          showErrors: true
