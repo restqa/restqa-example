@@ -13,7 +13,7 @@ environments:
           url: https://hacker-news.firebaseio.com
     outputs:
       - type: file
-        enabled: true
+        enabled: false
         config:
           path: 'hacker-news.report.json'
       - type: slack
