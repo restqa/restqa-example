@@ -21,3 +21,9 @@ environments:
         config:
           url: !env-var SLACK_WEBHOOK_URL
           showErrors: true
+      - type: http
+        enabled: true
+        config:
+          url: https://httpdump.io/5le3l
+          method: 'POST'
+
