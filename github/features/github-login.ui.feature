@@ -1,6 +1,6 @@
-Feature: super
+Feature: Login
 
-Scenario: This is my scenario
+Scenario: As a customer I should receive an error message if my credential are incorrect
 Given I open the page "login"
   And I am on the section "login"
 When I type "hello" in the element "username"
