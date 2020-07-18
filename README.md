@@ -70,7 +70,6 @@ jobs:
         path: 'test/'
 ```
 
-
 ### Using Gitlab CI
 
 
@@ -90,6 +89,25 @@ RestQa:
   script:
     - 'restqa run .'
 #   - 'restqa run -c .restqa.yml .' # if you want to add arguments
+```
+
+### Using Bitbucket Pipeline
+
+
+If you want to use the script on Bitbucket pipeline:
+
+1. Create a new file in your repository : `bitbucket-pipelines.yml`
+2. Copy paste the informations in your `bitbucket-pipelines.yml`:
+
+```
+
+pipelines:
+  default:
+    - step:
+      image: restqa/restqa
+      script:
+        - restqa run .
+    #   - 'restqa run -c .restqa.yml .' # if you want to add arguments
 ```
 
 
