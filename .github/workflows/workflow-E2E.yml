@@ -9,6 +9,7 @@ jobs:
       matrix:
         example_folder:
           - hacker-news
+          - namedays
     steps:
     - uses: actions/checkout@v2
     - name: Validate the gerkin files for ${{ matrix.example_folder }}

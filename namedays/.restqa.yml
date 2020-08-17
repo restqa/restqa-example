@@ -1,0 +1,20 @@
+---
+
+version: 0.0.1
+metadata:
+  code: NAMEDAY
+  name: Sample running on abalin.net
+  description: E2E test of the abalin.net public api
+environments:
+  - name: production
+    default: true
+    plugins:
+      - name: restqapi
+        config:
+          url: https://api.abalin.net
+    outputs:
+      - type: slack
+        enabled: true
+        config:
+          url: !env-var SLACK_WEBHOOK_URL
+          showErrors: true

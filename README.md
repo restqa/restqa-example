@@ -19,6 +19,7 @@ For a complete description of the RestQa spec, please refer to our [RestQa Docum
 1. [RestQa CLI](#restqa-cli)
 1. [API Testing](#api-testing)
 	2. 	Hacker News
+	2. 	Namedays
 1. [Continuous Integration](#continuous-integration)
 	2. Github Action
 	3. Gitlab CI
@@ -40,6 +41,7 @@ restqa run .        # Run the test suite
 RestQa relies on the plugin [RestQapi](https://restqa.io/restqapi.html) to manage the steps related to APIs.
 You can find example for :
 * [Hacker News API Open API without credential](./hacker-news)
+* [Namedays API Open API without credential](./namedays)
 
 
 ## Continuous Integration
